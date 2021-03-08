@@ -12,7 +12,7 @@ public class Crawler {
     private final String USER_AGENT =
             "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/13.0.782.112 Safari/535.1";
 
-    private final int MAX_PAGES_TO_SEARCH = 10;
+    private final int MAX_PAGES_TO_SEARCH = 25;
 
     public int crawl(int level, String url, ArrayList<String> visited, String hostName) {
         while(visited.size() < MAX_PAGES_TO_SEARCH) {

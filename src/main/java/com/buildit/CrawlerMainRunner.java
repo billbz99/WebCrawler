@@ -7,7 +7,8 @@ public class CrawlerMainRunner {
 
         Crawler crawler = new Crawler();
 
-        String url = "http://news.yahoo.com/";
+        //String url = "http://news.yahoo.com/";
+        String url = "http://wiprodigital.com";
         String hostName = url.split("/")[2];
 
         int numberOfPagesVisited = crawler.crawl(1, url, new ArrayList<String>(), hostName);
