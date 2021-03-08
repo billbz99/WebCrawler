@@ -11,6 +11,6 @@ public class CrawlerMainRunner {
         String hostName = url.split("/")[2];
 
         int numberOfPagesVisited = crawler.crawl(1, url, new ArrayList<String>(), hostName);
-        System.out.println(String.format("**Done** Visited %s web page(s)", numberOfPagesVisited));
+        System.out.printf("**Done** Visited %s web page(s)%n", numberOfPagesVisited);
     }
 }

@@ -23,7 +23,7 @@ public class Crawler {
                     String next_link = link.absUrl("href");
 
                     String nextLinkHostName = next_link.split("/")[2];
-                    if(nextLinkHostName.contains(hostName) && visited.contains(next_link) == false) {
+                    if(nextLinkHostName.contains(hostName) && !visited.contains(next_link)) {
                         crawl(level++, next_link, visited, hostName);
                     }
                 }
