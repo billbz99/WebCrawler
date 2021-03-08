@@ -24,3 +24,4 @@ due the following:
 3) Then run the jar, in this example the jar is located in: C:\dev\test\WebCrawler\target
 
 java -jar C:\dev\test\WebCrawler\target\WebCrawler-1.0.jar
+4) to run tests: mvn test

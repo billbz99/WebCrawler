@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CrawlerTestMainRunner {
+class CrawlerMainRunnerTest {
 
     @Test
     void testWebCrawler() {
@@ -16,6 +16,6 @@ class CrawlerTestMainRunner {
         String hostName = url.split("/")[2];
 
         int numberOfPagesVisited = crawler.crawl(1, url, new ArrayList<String>(), hostName);
-        Assertions.assertEquals(10, numberOfPagesVisited);
+        Assertions.assertEquals(25, numberOfPagesVisited);
     }
 }
